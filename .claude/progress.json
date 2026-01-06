@@ -1,0 +1,28 @@
+{
+  "current_file": "n001_hello_world.zig",
+  "next_file": "n002_comments.zig",
+  "next_number": 2,
+  "completed": [
+    {
+      "number": 1,
+      "file": "01_basics/n001_hello_world.zig",
+      "topic": "Hello World"
+    }
+  ],
+  "directories": {
+    "01_basics": { "start": 1, "end": 15, "completed": 1 },
+    "02_structs": { "start": 16, "end": 25, "completed": 0 },
+    "03_memory": { "start": 26, "end": 35, "completed": 0 },
+    "04_pointers": { "start": 36, "end": 45, "completed": 0 },
+    "05_errors": { "start": 46, "end": 55, "completed": 0 },
+    "06_data_structures": { "start": 56, "end": 65, "completed": 0 },
+    "07_testing": { "start": 66, "end": 70, "completed": 0 },
+    "08_build_system": { "start": 71, "end": 75, "completed": 0 },
+    "09_file_io": { "start": 76, "end": 85, "completed": 0 },
+    "10_c_interop": { "start": 86, "end": 95, "completed": 0 },
+    "11_concurrency": { "start": 96, "end": 105, "completed": 0 },
+    "12_simd": { "start": 106, "end": 110, "completed": 0 }
+  },
+  "total_files": 110,
+  "total_completed": 1
+}

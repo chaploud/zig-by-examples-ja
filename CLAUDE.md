@@ -55,18 +55,15 @@ zig-book（日本語翻訳済み）の内容を、コード主体で高速にZig
 
 ## 進捗管理
 
-- [ ] 01_basics/ (n001-n015)
-- [ ] 02_structs/ (n016-n025)
-- [ ] 03_memory/ (n026-n035)
-- [ ] 04_pointers/ (n036-n045)
-- [ ] 05_errors/ (n046-n055)
-- [ ] 06_data_structures/ (n056-n065)
-- [ ] 07_testing/ (n066-n070)
-- [ ] 08_build_system/ (n071-n075)
-- [ ] 09_file_io/ (n076-n085)
-- [ ] 10_c_interop/ (n086-n095)
-- [ ] 11_concurrency/ (n096-n105)
-- [ ] 12_simd/ (n106-n110)
+進捗状態は `.claude/progress.json` で管理（`/status` で確認可能）。
+
+## カスタムコマンド
+
+| コマンド | 説明 |
+|---------|------|
+| `/next` | 次のファイルを自動作成→検証→進捗更新まで一気通貫 |
+| `/status` | 進捗状況を表示 |
+| `/verify [file]` | 指定ファイルをテスト・検証 |
 
 ## Zig 0.15.2 注意点
 
