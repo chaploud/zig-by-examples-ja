@@ -1,7 +1,7 @@
 {
-  "current_file": "n004_variables.zig",
-  "next_file": "n005_integers.zig",
-  "next_number": 5,
+  "current_file": "n016_struct.zig",
+  "next_file": "n017_methods.zig",
+  "next_number": 17,
   "completed": [
     {
       "number": 1,
@@ -22,11 +22,71 @@
       "number": 4,
       "file": "01_basics/n004_variables.zig",
       "topic": "変数"
+    },
+    {
+      "number": 5,
+      "file": "01_basics/n005_integers.zig",
+      "topic": "整数型"
+    },
+    {
+      "number": 6,
+      "file": "01_basics/n006_floats.zig",
+      "topic": "浮動小数点型"
+    },
+    {
+      "number": 7,
+      "file": "01_basics/n007_booleans.zig",
+      "topic": "真偽値型"
+    },
+    {
+      "number": 8,
+      "file": "01_basics/n008_optionals.zig",
+      "topic": "Optional型"
+    },
+    {
+      "number": 9,
+      "file": "01_basics/n009_arrays.zig",
+      "topic": "配列"
+    },
+    {
+      "number": 10,
+      "file": "01_basics/n010_slices.zig",
+      "topic": "スライス"
+    },
+    {
+      "number": 11,
+      "file": "01_basics/n011_strings.zig",
+      "topic": "文字列"
+    },
+    {
+      "number": 12,
+      "file": "01_basics/n012_if.zig",
+      "topic": "if文"
+    },
+    {
+      "number": 13,
+      "file": "01_basics/n013_for.zig",
+      "topic": "forループ"
+    },
+    {
+      "number": 14,
+      "file": "01_basics/n014_while.zig",
+      "topic": "whileループ"
+    },
+    {
+      "number": 15,
+      "file": "01_basics/n015_switch.zig",
+      "topic": "switch文"
+    },
+    {
+      "number": 16,
+      "file": "02_structs/n016_struct.zig",
+      "topic": "構造体"
     }
   ],
   "directories": {
-    "01_basics": { "start": 1, "end": 15, "completed": 4 },
-    "02_structs": { "start": 16, "end": 25, "completed": 0 },
+    "01_basics": { "start": 1, "end": 15, "completed": 15 },
+    "02_structs": { "start": 16, "end": 25, "completed": 1 },
     "03_memory": { "start": 26, "end": 35, "completed": 0 },
     "04_pointers": { "start": 36, "end": 45, "completed": 0 },
     "05_errors": { "start": 46, "end": 55, "completed": 0 },
@@ -39,5 +99,5 @@
     "12_simd": { "start": 106, "end": 110, "completed": 0 }
   },
   "total_files": 110,
-  "total_completed": 4
+  "total_completed": 16
 }
