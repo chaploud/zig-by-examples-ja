@@ -8,8 +8,13 @@ zig-book（日本語翻訳済み）の内容を、コード主体で高速にZig
 
 ### 参照元
 
-- `/Users/shota.508/Documents/Learn/zig-book/chapters-ja/` の翻訳済みmarkdown
-- 各章のmarkdownを読み、説明を理解した上でコードにまとめる
+1. **翻訳済みmarkdown**: `/Users/shota.508/Documents/Learn/zig-book/chapters-ja/`
+   - 各章のmarkdownを読み、説明を理解した上でコードにまとめる
+
+2. **Zig 0.15.2対応済みコード例**: `/Users/shota.508/Documents/Learn/zig-book/examples/`
+   - **重要**: zig-bookの元コードは古いZigバージョン向け。examples/は0.15.2対応済み
+   - APIが動かない場合はここを参照して正しい書き方を確認する
+   - 章ごとにディレクトリ分け: `ch01/`, `ch02/`, ... `ch17/`
 
 ### コード作成方針
 
@@ -69,11 +74,32 @@ zig-book（日本語翻訳済み）の内容を、コード主体で高速にZig
 
 このプロジェクトは **Zig 0.15.2** を使用（`/opt/homebrew/Cellar/zig/0.15.2/`）。
 
+zig-bookの元コードは古いZigバージョン向けのため、API変更に注意が必要。
+**動かないコードがあれば `/Users/shota.508/Documents/Learn/zig-book/examples/` を参照**。
+
+### API変更まとめ
+
+| 項目 | 旧API (〜0.13) | 新API (0.15.2) |
+|------|---------------|----------------|
+| stdout出力 | `std.io.getStdOut().writer()` | `std.debug.print()` または `std.fs.File.stdout()` |
+| build.zig | `.root_source_file = ...` 直接指定 | `.root_module = b.createModule(...)` |
+
 ### stdout出力
 
 ```zig
-// Zig 0.15.2 では std.debug.print を使用
+// 旧 (Zig 0.13以前):
+// const stdout = std.io.getStdOut().writer();
+// try stdout.print("Hello!\n", .{});
+
+// 新 (Zig 0.15.2):
+// Option 1: std.debug.print（最もシンプル、stderrに出力）
 std.debug.print("Hello, {s}!\n", .{"world"});
+
+// Option 2: std.fs.File.stdout() + buffered writer（stdoutに出力したい場合）
+const stdout = std.fs.File.stdout();
+var buffer: [1024]u8 = undefined;
+var writer = stdout.writer(&buffer);
+// writer.interface で書き込み
 ```
 
 ### build.zig テンプレート（Zig 0.15.2）
@@ -85,6 +111,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
+    // 0.15.2: root_module + createModule を使用
     const exe = b.addExecutable(.{
         .name = "example",
         .root_module = b.createModule(.{
@@ -104,6 +131,13 @@ pub fn build(b: *std.Build) void {
 }
 ```
 
+### 標準ライブラリ参照
+
+APIが不明な場合は標準ライブラリのソースを確認:
+- 場所: `/opt/homebrew/Cellar/zig/0.15.2/lib/zig/std/`
+- Build API: `std/Build.zig`, `std/Build/Module.zig`
+- IO API: `std/Io.zig`, `std/fs/File.zig`
+
 ## 作業コマンド
 
 ```bash
@@ -119,22 +153,24 @@ zig fmt ファイル.zig
 
 ## zig-book章対応表
 
-| 章 | ファイル | 対応ディレクトリ |
-|----|---------|---------------|
-| 1 | 01-introducing-zig.md | 01_basics/ |
-| 2 | 02-control-flow-structs.md | 01_basics/, 02_structs/ |
-| 3 | 03-memory.md | 03_memory/ |
-| 4 | 04-base64-project.md | （プロジェクト例） |
-| 5 | 05-debugging.md | 07_testing/ |
-| 6 | 06-pointers.md | 04_pointers/ |
-| 7 | 07-http-server.md | （プロジェクト例） |
-| 8 | 08-unit-tests.md | 07_testing/ |
-| 9 | 09-build-system.md | 08_build_system/ |
-| 10 | 10-error-handling.md | 05_errors/ |
-| 11 | 11-data-structures.md | 06_data_structures/ |
-| 12 | 12-stack-project.md | （プロジェクト例） |
-| 13 | 13-file-operations.md | 09_file_io/ |
-| 14 | 14-c-interop.md | 10_c_interop/ |
-| 15 | 15-image-filter.md | （プロジェクト例） |
-| 16 | 16-threads.md | 11_concurrency/ |
-| 17 | 17-vectors.md | 12_simd/ |
+| 章 | markdown | examples/ | 対応ディレクトリ |
+|----|---------|-----------|---------------|
+| 1 | 01-introducing-zig.md | ch01/ | 01_basics/ |
+| 2 | 02-control-flow-structs.md | ch02/ | 01_basics/, 02_structs/ |
+| 3 | 03-memory.md | ch03/ | 03_memory/ |
+| 4 | 04-base64-project.md | ch04/ | （プロジェクト例） |
+| 5 | 05-debugging.md | ch05/ | 07_testing/ |
+| 6 | 06-pointers.md | ch06/ | 04_pointers/ |
+| 7 | 07-http-server.md | ch07/ | （プロジェクト例） |
+| 8 | 08-unit-tests.md | ch08/ | 07_testing/ |
+| 9 | 09-build-system.md | ch09/ | 08_build_system/ |
+| 10 | 10-error-handling.md | ch10/ | 05_errors/ |
+| 11 | 11-data-structures.md | ch11/ | 06_data_structures/ |
+| 12 | 12-stack-project.md | ch12/ | （プロジェクト例） |
+| 13 | 13-file-operations.md | ch13/ | 09_file_io/ |
+| 14 | 14-c-interop.md | ch14/ | 10_c_interop/ |
+| 15 | 15-image-filter.md | ch15/ | （プロジェクト例） |
+| 16 | 16-threads.md | ch16/ | 11_concurrency/ |
+| 17 | 17-vectors.md | ch17/ | 12_simd/ |
+
+**examples/パス**: `/Users/shota.508/Documents/Learn/zig-book/examples/`

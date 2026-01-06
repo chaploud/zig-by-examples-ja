@@ -1,6 +1,6 @@
 ---
 description: 次のZigサンプルファイルを自動で作成・検証・進捗更新まで一気通貫で実行
-allowed-tools: Read, Write, Edit, Bash(zig:*), Bash(mkdir:*), Glob
+allowed-tools: Read, Write, Edit, Bash(zig run:*), Bash(zig test:*), Bash(zig fmt:*), Bash(mkdir:*), Bash(ls:*), Glob
 ---
 
 # 次のZigファイルを自動作成（一気通貫）
@@ -53,6 +53,23 @@ allowed-tools: Read, Write, Edit, Bash(zig:*), Bash(mkdir:*), Glob
    - 11_concurrency → 16-threads.md
    - 12_simd → 17-vectors.md
 
+4. **Zig 0.15.2対応コード例** `/Users/shota.508/Documents/Learn/zig-book/examples/` を参照:
+   - 01_basics → ch01/, ch02/
+   - 02_structs → ch02/
+   - 03_memory → ch03/
+   - 04_pointers → ch06/
+   - 05_errors → ch10/
+   - 06_data_structures → ch11/
+   - 07_testing → ch05/, ch08/
+   - 08_build_system → ch09/
+   - 09_file_io → ch13/
+   - 10_c_interop → ch14/
+   - 11_concurrency → ch16/
+   - 12_simd → ch17/
+
+   **重要**: markdownのコードは古いAPIの可能性あり。examples/は0.15.2対応済み。
+   APIエラーが出たらexamples/を確認すること。
+
 ## Step 3: Zigファイル作成
 
 以下のルールに従う：
@@ -74,9 +91,9 @@ test "テスト名" {
 ```
 
 ### 必須要素
-- `//!` でトピックの概要説明
-- `pub fn main()` で実行可能に（適切な場合）
-- `test` ブロックでテスト可能に
+- 「//!」でトピックの概要説明
+- 「pub fn main()」で実行可能に（適切な場合）
+- 「test」ブロックでテスト可能に
 - 読者がコードを読むだけで概念を理解できるコメント
 
 ## Step 4: 検証
@@ -110,3 +127,10 @@ zig test <file>
 - 実行結果（zig run の出力）
 - テスト結果（zig test の結果）
 - 次に作成するファイル
+
+## API変更を発見した場合
+
+Zig 0.15.2で動かないAPIを発見した場合:
+1. `/Users/shota.508/Documents/Learn/zig-book/examples/` で正しい書き方を確認
+2. 正しいAPIでコードを修正
+3. 新たに発見したAPI変更は `CLAUDE.md` の「API変更まとめ」テーブルに追記
