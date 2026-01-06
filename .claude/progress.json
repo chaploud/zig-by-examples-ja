@@ -1,7 +1,7 @@
 {
-  "current_file": "n003_constants.zig",
-  "next_file": "n004_variables.zig",
-  "next_number": 4,
+  "current_file": "n004_variables.zig",
+  "next_file": "n005_integers.zig",
+  "next_number": 5,
   "completed": [
     {
       "number": 1,
@@ -17,10 +17,15 @@
       "number": 3,
       "file": "01_basics/n003_constants.zig",
       "topic": "定数"
+    },
+    {
+      "number": 4,
+      "file": "01_basics/n004_variables.zig",
+      "topic": "変数"
     }
   ],
   "directories": {
-    "01_basics": { "start": 1, "end": 15, "completed": 3 },
+    "01_basics": { "start": 1, "end": 15, "completed": 4 },
     "02_structs": { "start": 16, "end": 25, "completed": 0 },
     "03_memory": { "start": 26, "end": 35, "completed": 0 },
     "04_pointers": { "start": 36, "end": 45, "completed": 0 },
@@ -34,5 +39,5 @@
     "12_simd": { "start": 106, "end": 110, "completed": 0 }
   },
   "total_files": 110,
-  "total_completed": 3
+  "total_completed": 4
 }
