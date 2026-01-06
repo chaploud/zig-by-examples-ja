@@ -1,39 +1,27 @@
 ---
 description: 指定したZigファイルをテスト・検証する
-allowed-tools: Read, Bash(zig:*)
+allowed-tools: Read, Bash(zig run:*), Bash(zig test:*), Bash(zig fmt:*)
 argument-hint: [file-path]
 ---
 
 # Zigファイルを検証
 
-指定されたファイル（または最新のファイル）を検証する。
+`$ARGUMENTS` で指定されたファイル、または最後に作成したファイルを検証。
 
-## 引数
-
-`$ARGUMENTS` - 検証するファイルのパス（省略時は最新のファイル）
-
-## 検証項目
-
-1. **コンパイル確認**: `zig build-exe` が通るか
-2. **実行確認**: `zig run` で実行できるか
-3. **テスト確認**: `zig test` が通るか
-4. **フォーマット確認**: `zig fmt --check` でフォーマットが正しいか
-
-## 実行コマンド
+## 検証コマンド
 
 ```bash
-# 実行テスト
-zig run <file>
-
-# ユニットテスト
-zig test <file>
-
-# フォーマットチェック
-zig fmt --check <file>
+zig fmt --check <file>  # フォーマット
+zig run <file>          # 実行（main関数がある場合）
+zig test <file>         # テスト
 ```
 
-## 成功基準
+## 出力例
 
-- 全てのテストがパスすること
-- 実行時エラーがないこと
-- フォーマットが正しいこと
+```
+=== 検証: n005_integers.zig ===
+
+フォーマット: OK
+実行結果: (出力を表示)
+テスト: 5 passed
+```
