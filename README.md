@@ -77,6 +77,9 @@ Zigを高速にキャッチアップするためのコード例集。
 ## データ構造
 
 - [n056_arraylist.zig](./06_data_structures/n056_arraylist.zig) - ArrayList
+
+**ここまで実装済み**
+
 - [n057_hashmap.zig](./06_data_structures/n057_hashmap.zig) - HashMap
 - [n058_stringhashmap.zig](./06_data_structures/n058_stringhashmap.zig) - StringHashMap
 - [n059_linkedlist.zig](./06_data_structures/n059_linkedlist.zig) - LinkedList
