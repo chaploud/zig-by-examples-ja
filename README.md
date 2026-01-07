@@ -152,3 +152,17 @@ Zigを高速にキャッチアップするためのコード例集。Zig v0.15.2
 - [n108_reduce.zig](./12_simd/n108_reduce.zig) - reduce
 - [n109_shuffle.zig](./12_simd/n109_shuffle.zig) - shuffle
 - [n110_simd_practical.zig](./12_simd/n110_simd_practical.zig) - SIMD実践例
+
+## Credit
+
+### Original Work / 原著
+
+**"Introduction to Zig: a project-based book"**
+Copyright (c) 2024 Pedro Duarte Faria
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Repository: https://github.com/pedropark99/zig-book
+Live Book: https://pedropark99.github.io/zig-book/
+
+Based on the code and explanations from this book, modified to work with Zig 0.15.2 and added Japanese comments.
+
+こちらの本のコードや説明を元にZig 0.15.2で動作するように改変、日本語コメントをつけました。
