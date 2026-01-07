@@ -1,7 +1,7 @@
 {
-  "current_file": "n016_struct.zig",
-  "next_file": "n017_methods.zig",
-  "next_number": 17,
+  "current_file": "n056_arraylist.zig",
+  "next_file": "n057_hashmap.zig",
+  "next_number": 57,
   "completed": [
     {
       "number": 1,
@@ -82,15 +82,215 @@
       "number": 16,
       "file": "02_structs/n016_struct.zig",
       "topic": "構造体"
+    },
+    {
+      "number": 17,
+      "file": "02_structs/n017_methods.zig",
+      "topic": "メソッド"
+    },
+    {
+      "number": 18,
+      "file": "02_structs/n018_enum.zig",
+      "topic": "列挙型"
+    },
+    {
+      "number": 19,
+      "file": "02_structs/n019_union.zig",
+      "topic": "共用体"
+    },
+    {
+      "number": 20,
+      "file": "02_structs/n020_comptime.zig",
+      "topic": "コンパイル時計算"
+    },
+    {
+      "number": 21,
+      "file": "02_structs/n021_functions.zig",
+      "topic": "関数"
+    },
+    {
+      "number": 22,
+      "file": "02_structs/n022_builtin.zig",
+      "topic": "組み込み関数"
+    },
+    {
+      "number": 23,
+      "file": "02_structs/n023_defer.zig",
+      "topic": "deferとerrdefer"
+    },
+    {
+      "number": 24,
+      "file": "02_structs/n024_blocks.zig",
+      "topic": "ブロックとラベル"
+    },
+    {
+      "number": 25,
+      "file": "02_structs/n025_import.zig",
+      "topic": "@importとモジュール"
+    },
+    {
+      "number": 26,
+      "file": "03_memory/n026_allocators.zig",
+      "topic": "アロケータ"
+    },
+    {
+      "number": 27,
+      "file": "03_memory/n027_stack_heap.zig",
+      "topic": "スタックとヒープ"
+    },
+    {
+      "number": 28,
+      "file": "03_memory/n028_sentinel.zig",
+      "topic": "センチネル終端配列"
+    },
+    {
+      "number": 29,
+      "file": "03_memory/n029_alignment.zig",
+      "topic": "メモリアライメント"
+    },
+    {
+      "number": 30,
+      "file": "03_memory/n030_memory_layout.zig",
+      "topic": "メモリレイアウト"
+    },
+    {
+      "number": 31,
+      "file": "03_memory/n031_resize_realloc.zig",
+      "topic": "resizeとrealloc"
+    },
+    {
+      "number": 32,
+      "file": "03_memory/n032_dupe_concat.zig",
+      "topic": "dupeとconcat"
+    },
+    {
+      "number": 33,
+      "file": "03_memory/n033_memory_safety.zig",
+      "topic": "メモリ安全性"
+    },
+    {
+      "number": 34,
+      "file": "03_memory/n034_comptime_alloc.zig",
+      "topic": "コンパイル時メモリ"
+    },
+    {
+      "number": 35,
+      "file": "03_memory/n035_logging_allocator.zig",
+      "topic": "ロギングアロケータ"
+    },
+    {
+      "number": 36,
+      "file": "04_pointers/n036_pointers.zig",
+      "topic": "ポインタ"
+    },
+    {
+      "number": 37,
+      "file": "04_pointers/n037_pointer_coercion.zig",
+      "topic": "ポインタ変換"
+    },
+    {
+      "number": 38,
+      "file": "04_pointers/n038_volatile.zig",
+      "topic": "Volatileポインタ"
+    },
+    {
+      "number": 39,
+      "file": "04_pointers/n039_allowzero.zig",
+      "topic": "allowzeroポインタ"
+    },
+    {
+      "number": 40,
+      "file": "04_pointers/n040_address_space.zig",
+      "topic": "アドレス空間"
+    },
+    {
+      "number": 41,
+      "file": "04_pointers/n041_function_pointers.zig",
+      "topic": "関数ポインタ"
+    },
+    {
+      "number": 42,
+      "file": "04_pointers/n042_multi_pointers.zig",
+      "topic": "複数要素ポインタ"
+    },
+    {
+      "number": 43,
+      "file": "04_pointers/n043_optional_pointers.zig",
+      "topic": "Optionalポインタ"
+    },
+    {
+      "number": 44,
+      "file": "04_pointers/n044_pointer_arithmetic.zig",
+      "topic": "ポインタ演算"
+    },
+    {
+      "number": 45,
+      "file": "04_pointers/n045_pointer_summary.zig",
+      "topic": "ポインタ総まとめ"
+    },
+    {
+      "number": 46,
+      "file": "05_errors/n046_errors.zig",
+      "topic": "エラー処理の基礎"
+    },
+    {
+      "number": 47,
+      "file": "05_errors/n047_errdefer.zig",
+      "topic": "errdefer"
+    },
+    {
+      "number": 48,
+      "file": "05_errors/n048_error_sets.zig",
+      "topic": "エラーセット"
+    },
+    {
+      "number": 49,
+      "file": "05_errors/n049_error_payloads.zig",
+      "topic": "エラーペイロード"
+    },
+    {
+      "number": 50,
+      "file": "05_errors/n050_error_traces.zig",
+      "topic": "エラートレース"
+    },
+    {
+      "number": 51,
+      "file": "05_errors/n051_error_handling_patterns.zig",
+      "topic": "エラーハンドリングパターン"
+    },
+    {
+      "number": 52,
+      "file": "05_errors/n052_error_coercion.zig",
+      "topic": "エラー型変換"
+    },
+    {
+      "number": 53,
+      "file": "05_errors/n053_error_unwrap.zig",
+      "topic": "エラーのアンラップ"
+    },
+    {
+      "number": 54,
+      "file": "05_errors/n054_optional_vs_error.zig",
+      "topic": "OptionalとErrorの使い分け"
+    },
+    {
+      "number": 55,
+      "file": "05_errors/n055_error_summary.zig",
+      "topic": "エラー処理総まとめ"
+    },
+    {
+      "number": 56,
+      "file": "06_data_structures/n056_arraylist.zig",
+      "topic": "ArrayList"
     }
   ],
   "directories": {
     "01_basics": { "start": 1, "end": 15, "completed": 15 },
-    "02_structs": { "start": 16, "end": 25, "completed": 1 },
-    "03_memory": { "start": 26, "end": 35, "completed": 0 },
-    "04_pointers": { "start": 36, "end": 45, "completed": 0 },
-    "05_errors": { "start": 46, "end": 55, "completed": 0 },
-    "06_data_structures": { "start": 56, "end": 65, "completed": 0 },
+    "02_structs": { "start": 16, "end": 25, "completed": 10 },
+    "03_memory": { "start": 26, "end": 35, "completed": 10 },
+    "04_pointers": { "start": 36, "end": 45, "completed": 10 },
+    "05_errors": { "start": 46, "end": 55, "completed": 10 },
+    "06_data_structures": { "start": 56, "end": 65, "completed": 1 },
     "07_testing": { "start": 66, "end": 70, "completed": 0 },
     "08_build_system": { "start": 71, "end": 75, "completed": 0 },
     "09_file_io": { "start": 76, "end": 85, "completed": 0 },
@@ -99,5 +299,5 @@
     "12_simd": { "start": 106, "end": 110, "completed": 0 }
   },
   "total_files": 110,
-  "total_completed": 16
+  "total_completed": 56
 }
