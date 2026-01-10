@@ -99,59 +99,58 @@ Zigを高速にキャッチアップするためのコード例集。Zig v0.15.2
 
 - [n071_build_basics.zig](./08_build_system/n071_build_basics.zig) - ビルドシステム基礎
 - [n072_build_options.zig](./08_build_system/n072_build_options.zig) - ビルドオプション
-
-**ここまで実装済み (72/110)**
-
-- n073_build_steps.zig - ビルドステップ
-- n074_dependencies.zig - 依存関係
-- n075_cross_compile.zig - クロスコンパイル
+- [n073_build_steps.zig](./08_build_system/n073_build_steps.zig) - ビルドステップ
+- [n074_dependencies.zig](./08_build_system/n074_dependencies.zig) - 依存関係管理
+- [n075_cross_compile.zig](./08_build_system/n075_cross_compile.zig) - クロスコンパイル
 
 ## ファイル・IO
 
-- n076_file_open.zig - ファイルを開く
-- n077_file_read.zig - ファイル読み込み
-- n078_file_write.zig - ファイル書き込み
-- n079_directories.zig - ディレクトリ操作
-- n080_buffered_io.zig - バッファ付きIO
-- n081_stdin_stdout.zig - 標準入出力
-- n082_formatting.zig - フォーマット出力
-- n083_json.zig - JSON
-- n084_logging.zig - ロギング
-- n085_random.zig - 乱数
+- [n076_file_open.zig](./09_file_io/n076_file_open.zig) - ファイルを開く
+- [n077_file_read.zig](./09_file_io/n077_file_read.zig) - ファイル読み込み
+- [n078_file_write.zig](./09_file_io/n078_file_write.zig) - ファイル書き込み
+- [n079_directories.zig](./09_file_io/n079_directories.zig) - ディレクトリ操作
+- [n080_buffered_io.zig](./09_file_io/n080_buffered_io.zig) - バッファードI/O
+- [n081_seek_position.zig](./09_file_io/n081_seek_position.zig) - シーク位置
+- [n082_stdin_stdout.zig](./09_file_io/n082_stdin_stdout.zig) - 標準入出力
+- [n083_path_operations.zig](./09_file_io/n083_path_operations.zig) - パス操作
+- [n084_file_stat.zig](./09_file_io/n084_file_stat.zig) - ファイル情報取得
+- [n085_file_io_summary.zig](./09_file_io/n085_file_io_summary.zig) - ファイルI/O総まとめ
 
 ## C連携
 
-- n086_c_import.zig - @cImport
-- n087_calling_c.zig - C関数の呼び出し
-- n088_c_strings.zig - C文字列
-- n089_c_structs.zig - C構造体
-- n090_c_pointers.zig - Cポインタ型
-- n091_linking.zig - リンク
-- n092_translate_c.zig - translate-c
-- n093_extern.zig - extern
-- n094_packed_structs.zig - packed構造体
-- n095_inline_assembly.zig - インラインアセンブリ
+C連携セクションはbuild.zigを含むディレクトリ構造。各ディレクトリ内で `zig build run` で実行。
+
+- [n086_libc_basics/](./10_c_interop/n086_libc_basics/) - libc連携の基礎
+- [n087_custom_c/](./10_c_interop/n087_custom_c/) - 自作Cコード連携
+- [n088_translate_c/](./10_c_interop/n088_translate_c/) - translate-c
+- [n089_extern_libs/](./10_c_interop/n089_extern_libs/) - 外部Cライブラリ
+- [n090_export_to_c/](./10_c_interop/n090_export_to_c/) - Cへのエクスポート
+- [n091_c_strings/](./10_c_interop/n091_c_strings/) - C文字列変換
+- [n092_memory_layout/](./10_c_interop/n092_memory_layout/) - メモリレイアウト
+- [n093_opaque_types/](./10_c_interop/n093_opaque_types/) - opaque型
+- [n094_c_patterns/](./10_c_interop/n094_c_patterns/) - C連携パターン
+- [n095_c_interop_summary/](./10_c_interop/n095_c_interop_summary/) - C連携総まとめ
 
 ## 並行処理
 
-- n096_threads.zig - スレッドの基本
-- n097_spawn.zig - spawn
-- n098_mutex.zig - Mutex
-- n099_atomic.zig - アトミック操作
-- n100_thread_local.zig - スレッドローカル
-- n101_once.zig - Once
-- n102_condition.zig - 条件変数
-- n103_futures.zig - Future
-- n104_async.zig - async/await
-- n105_event_loop.zig - イベントループ
+- [n096_threads.zig](./11_concurrency/n096_threads.zig) - スレッドの基礎
+- [n097_mutex.zig](./11_concurrency/n097_mutex.zig) - ミューテックス
+- [n098_rwlock.zig](./11_concurrency/n098_rwlock.zig) - 読み書きロック
+- [n099_atomic.zig](./11_concurrency/n099_atomic.zig) - アトミック操作
+- [n100_thread_pool.zig](./11_concurrency/n100_thread_pool.zig) - スレッドプール
+- [n101_wait_group.zig](./11_concurrency/n101_wait_group.zig) - WaitGroup
+- [n102_channel.zig](./11_concurrency/n102_channel.zig) - チャンネルパターン
+- [n103_futex.zig](./11_concurrency/n103_futex.zig) - Futex
+- [n104_once.zig](./11_concurrency/n104_once.zig) - Once
+- [n105_concurrency_summary.zig](./11_concurrency/n105_concurrency_summary.zig) - 並行処理総まとめ
 
 ## SIMD
 
-- n106_vectors.zig - ベクトル型
-- n107_vector_ops.zig - ベクトル演算
-- n108_reduce.zig - reduce
-- n109_shuffle.zig - shuffle
-- n110_simd_practical.zig - SIMD実践例
+- [n106_simd_basics.zig](./12_simd/n106_simd_basics.zig) - SIMDの基礎
+- [n107_simd_operations.zig](./12_simd/n107_simd_operations.zig) - SIMD操作関数
+- [n108_simd_shuffle.zig](./12_simd/n108_simd_shuffle.zig) - SIMDシャッフル
+- [n109_simd_practical.zig](./12_simd/n109_simd_practical.zig) - SIMD実践例
+- [n110_simd_summary.zig](./12_simd/n110_simd_summary.zig) - SIMD総まとめ
 
 ## Credit
 

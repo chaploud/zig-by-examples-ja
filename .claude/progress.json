@@ -1,533 +1,118 @@
 {
-  "current_file": "n105_concurrency_summary",
-  "next_file": "n106_simd_basics",
-  "next_number": 106,
+  "current_file": "n110_simd_summary",
+  "next_file": null,
+  "next_number": null,
   "completed": [
-    {
-      "number": 1,
-      "file": "01_basics/n001_hello_world.zig",
-      "topic": "Hello World"
-    },
-    {
-      "number": 2,
-      "file": "01_basics/n002_comments.zig",
-      "topic": "コメント"
-    },
-    {
-      "number": 3,
-      "file": "01_basics/n003_constants.zig",
-      "topic": "定数"
-    },
-    {
-      "number": 4,
-      "file": "01_basics/n004_variables.zig",
-      "topic": "変数"
-    },
-    {
-      "number": 5,
-      "file": "01_basics/n005_integers.zig",
-      "topic": "整数型"
-    },
-    {
-      "number": 6,
-      "file": "01_basics/n006_floats.zig",
-      "topic": "浮動小数点型"
-    },
-    {
-      "number": 7,
-      "file": "01_basics/n007_booleans.zig",
-      "topic": "真偽値型"
-    },
-    {
-      "number": 8,
-      "file": "01_basics/n008_optionals.zig",
-      "topic": "Optional型"
-    },
-    {
-      "number": 9,
-      "file": "01_basics/n009_arrays.zig",
-      "topic": "配列"
-    },
-    {
-      "number": 10,
-      "file": "01_basics/n010_slices.zig",
-      "topic": "スライス"
-    },
-    {
-      "number": 11,
-      "file": "01_basics/n011_strings.zig",
-      "topic": "文字列"
-    },
-    {
-      "number": 12,
-      "file": "01_basics/n012_if.zig",
-      "topic": "if文"
-    },
-    {
-      "number": 13,
-      "file": "01_basics/n013_for.zig",
-      "topic": "forループ"
-    },
-    {
-      "number": 14,
-      "file": "01_basics/n014_while.zig",
-      "topic": "whileループ"
-    },
-    {
-      "number": 15,
-      "file": "01_basics/n015_switch.zig",
-      "topic": "switch文"
-    },
-    {
-      "number": 16,
-      "file": "02_structs/n016_struct.zig",
-      "topic": "構造体"
-    },
-    {
-      "number": 17,
-      "file": "02_structs/n017_methods.zig",
-      "topic": "メソッド"
-    },
-    {
-      "number": 18,
-      "file": "02_structs/n018_enum.zig",
-      "topic": "列挙型"
-    },
-    {
-      "number": 19,
-      "file": "02_structs/n019_union.zig",
-      "topic": "共用体"
-    },
-    {
-      "number": 20,
-      "file": "02_structs/n020_comptime.zig",
-      "topic": "コンパイル時計算"
-    },
-    {
-      "number": 21,
-      "file": "02_structs/n021_functions.zig",
-      "topic": "関数"
-    },
-    {
-      "number": 22,
-      "file": "02_structs/n022_builtin.zig",
-      "topic": "組み込み関数"
-    },
-    {
-      "number": 23,
-      "file": "02_structs/n023_defer.zig",
-      "topic": "deferとerrdefer"
-    },
-    {
-      "number": 24,
-      "file": "02_structs/n024_blocks.zig",
-      "topic": "ブロックとラベル"
-    },
-    {
-      "number": 25,
-      "file": "02_structs/n025_import.zig",
-      "topic": "@importとモジュール"
-    },
-    {
-      "number": 26,
-      "file": "03_memory/n026_allocators.zig",
-      "topic": "アロケータ"
-    },
-    {
-      "number": 27,
-      "file": "03_memory/n027_stack_heap.zig",
-      "topic": "スタックとヒープ"
-    },
-    {
-      "number": 28,
-      "file": "03_memory/n028_sentinel.zig",
-      "topic": "センチネル終端配列"
-    },
-    {
-      "number": 29,
-      "file": "03_memory/n029_alignment.zig",
-      "topic": "メモリアライメント"
-    },
-    {
-      "number": 30,
-      "file": "03_memory/n030_memory_layout.zig",
-      "topic": "メモリレイアウト"
-    },
-    {
-      "number": 31,
-      "file": "03_memory/n031_resize_realloc.zig",
-      "topic": "resizeとrealloc"
-    },
-    {
-      "number": 32,
-      "file": "03_memory/n032_dupe_concat.zig",
-      "topic": "dupeとconcat"
-    },
-    {
-      "number": 33,
-      "file": "03_memory/n033_memory_safety.zig",
-      "topic": "メモリ安全性"
-    },
-    {
-      "number": 34,
-      "file": "03_memory/n034_comptime_alloc.zig",
-      "topic": "コンパイル時メモリ"
-    },
-    {
-      "number": 35,
-      "file": "03_memory/n035_logging_allocator.zig",
-      "topic": "ロギングアロケータ"
-    },
-    {
-      "number": 36,
-      "file": "04_pointers/n036_pointers.zig",
-      "topic": "ポインタ"
-    },
-    {
-      "number": 37,
-      "file": "04_pointers/n037_pointer_coercion.zig",
-      "topic": "ポインタ変換"
-    },
-    {
-      "number": 38,
-      "file": "04_pointers/n038_volatile.zig",
-      "topic": "Volatileポインタ"
-    },
-    {
-      "number": 39,
-      "file": "04_pointers/n039_allowzero.zig",
-      "topic": "allowzeroポインタ"
-    },
-    {
-      "number": 40,
-      "file": "04_pointers/n040_address_space.zig",
-      "topic": "アドレス空間"
-    },
-    {
-      "number": 41,
-      "file": "04_pointers/n041_function_pointers.zig",
-      "topic": "関数ポインタ"
-    },
-    {
-      "number": 42,
-      "file": "04_pointers/n042_multi_pointers.zig",
-      "topic": "複数要素ポインタ"
-    },
-    {
-      "number": 43,
-      "file": "04_pointers/n043_optional_pointers.zig",
-      "topic": "Optionalポインタ"
-    },
-    {
-      "number": 44,
-      "file": "04_pointers/n044_pointer_arithmetic.zig",
-      "topic": "ポインタ演算"
-    },
-    {
-      "number": 45,
-      "file": "04_pointers/n045_pointer_summary.zig",
-      "topic": "ポインタ総まとめ"
-    },
-    {
-      "number": 46,
-      "file": "05_errors/n046_errors.zig",
-      "topic": "エラー処理の基礎"
-    },
-    {
-      "number": 47,
-      "file": "05_errors/n047_errdefer.zig",
-      "topic": "errdefer"
-    },
-    {
-      "number": 48,
-      "file": "05_errors/n048_error_sets.zig",
-      "topic": "エラーセット"
-    },
-    {
-      "number": 49,
-      "file": "05_errors/n049_error_payloads.zig",
-      "topic": "エラーペイロード"
-    },
-    {
-      "number": 50,
-      "file": "05_errors/n050_error_traces.zig",
-      "topic": "エラートレース"
-    },
-    {
-      "number": 51,
-      "file": "05_errors/n051_error_handling_patterns.zig",
-      "topic": "エラーハンドリングパターン"
-    },
-    {
-      "number": 52,
-      "file": "05_errors/n052_error_coercion.zig",
-      "topic": "エラー型変換"
-    },
-    {
-      "number": 53,
-      "file": "05_errors/n053_error_unwrap.zig",
-      "topic": "エラーのアンラップ"
-    },
-    {
-      "number": 54,
-      "file": "05_errors/n054_optional_vs_error.zig",
-      "topic": "OptionalとErrorの使い分け"
-    },
-    {
-      "number": 55,
-      "file": "05_errors/n055_error_summary.zig",
-      "topic": "エラー処理総まとめ"
-    },
-    {
-      "number": 56,
-      "file": "06_data_structures/n056_arraylist.zig",
-      "topic": "ArrayList"
-    },
-    {
-      "number": 57,
-      "file": "06_data_structures/n057_hashmap.zig",
-      "topic": "HashMap"
-    },
-    {
-      "number": 58,
-      "file": "06_data_structures/n058_linkedlist.zig",
-      "topic": "LinkedList"
-    },
-    {
-      "number": 59,
-      "file": "06_data_structures/n059_multiarraylist.zig",
-      "topic": "MultiArrayList"
-    },
-    {
-      "number": 60,
-      "file": "06_data_structures/n060_priorityqueue.zig",
-      "topic": "PriorityQueue"
-    },
-    {
-      "number": 61,
-      "file": "06_data_structures/n061_segmentedlist.zig",
-      "topic": "SegmentedList"
-    },
-    {
-      "number": 62,
-      "file": "06_data_structures/n062_bitset.zig",
-      "topic": "BitSet"
-    },
-    {
-      "number": 63,
-      "file": "06_data_structures/n063_bufmap.zig",
-      "topic": "BufMap"
-    },
-    {
-      "number": 64,
-      "file": "06_data_structures/n064_bufset.zig",
-      "topic": "BufSet"
-    },
-    {
-      "number": 65,
-      "file": "06_data_structures/n065_enum_collections.zig",
-      "topic": "EnumSet/EnumMap/EnumArray"
-    },
-    {
-      "number": 66,
-      "file": "07_testing/n066_testing_basics.zig",
-      "topic": "テストの基礎"
-    },
-    {
-      "number": 67,
-      "file": "07_testing/n067_test_organization.zig",
-      "topic": "テストの構成"
-    },
-    {
-      "number": 68,
-      "file": "07_testing/n068_test_patterns.zig",
-      "topic": "テストパターン"
-    },
-    {
-      "number": 69,
-      "file": "07_testing/n069_random_testing.zig",
-      "topic": "ランダムテスト"
-    },
-    {
-      "number": 70,
-      "file": "07_testing/n070_test_summary.zig",
-      "topic": "テスト総まとめ"
-    },
-    {
-      "number": 71,
-      "file": "08_build_system/n071_build_basics.zig",
-      "topic": "ビルドシステム基礎"
-    },
-    {
-      "number": 72,
-      "file": "08_build_system/n072_build_options.zig",
-      "topic": "ビルドオプション"
-    },
-    {
-      "number": 73,
-      "file": "08_build_system/n073_build_steps.zig",
-      "topic": "ビルドステップ"
-    },
-    {
-      "number": 74,
-      "file": "08_build_system/n074_dependencies.zig",
-      "topic": "依存関係管理"
-    },
-    {
-      "number": 75,
-      "file": "08_build_system/n075_cross_compile.zig",
-      "topic": "クロスコンパイル"
-    },
-    {
-      "number": 76,
-      "file": "09_file_io/n076_file_open.zig",
-      "topic": "ファイルを開く"
-    },
-    {
-      "number": 77,
-      "file": "09_file_io/n077_file_read.zig",
-      "topic": "ファイル読み込み"
-    },
-    {
-      "number": 78,
-      "file": "09_file_io/n078_file_write.zig",
-      "topic": "ファイル書き込み"
-    },
-    {
-      "number": 79,
-      "file": "09_file_io/n079_directories.zig",
-      "topic": "ディレクトリ操作"
-    },
-    {
-      "number": 80,
-      "file": "09_file_io/n080_buffered_io.zig",
-      "topic": "バッファードI/O"
-    },
-    {
-      "number": 81,
-      "file": "09_file_io/n081_seek_position.zig",
-      "topic": "シーク位置"
-    },
-    {
-      "number": 82,
-      "file": "09_file_io/n082_stdin_stdout.zig",
-      "topic": "標準入出力"
-    },
-    {
-      "number": 83,
-      "file": "09_file_io/n083_path_operations.zig",
-      "topic": "パス操作"
-    },
-    {
-      "number": 84,
-      "file": "09_file_io/n084_file_stat.zig",
-      "topic": "ファイル情報取得"
-    },
-    {
-      "number": 85,
-      "file": "09_file_io/n085_file_io_summary.zig",
-      "topic": "ファイルI/O総まとめ"
-    },
-    {
-      "number": 86,
-      "file": "10_c_interop/n086_libc_basics/",
-      "topic": "libc連携の基礎"
-    },
-    {
-      "number": 87,
-      "file": "10_c_interop/n087_custom_c/",
-      "topic": "自作Cコード連携"
-    },
-    {
-      "number": 88,
-      "file": "10_c_interop/n088_translate_c/",
-      "topic": "translate-c"
-    },
-    {
-      "number": 89,
-      "file": "10_c_interop/n089_extern_libs/",
-      "topic": "外部Cライブラリ"
-    },
-    {
-      "number": 90,
-      "file": "10_c_interop/n090_export_to_c/",
-      "topic": "Cへのエクスポート"
-    },
-    {
-      "number": 91,
-      "file": "10_c_interop/n091_c_strings/",
-      "topic": "C文字列変換"
-    },
-    {
-      "number": 92,
-      "file": "10_c_interop/n092_memory_layout/",
-      "topic": "メモリレイアウト"
-    },
-    {
-      "number": 93,
-      "file": "10_c_interop/n093_opaque_types/",
-      "topic": "opaque型"
-    },
-    {
-      "number": 94,
-      "file": "10_c_interop/n094_c_patterns/",
-      "topic": "C連携パターン"
-    },
-    {
-      "number": 95,
-      "file": "10_c_interop/n095_c_interop_summary/",
-      "topic": "C連携総まとめ"
-    },
-    {
-      "number": 96,
-      "file": "11_concurrency/n096_threads.zig",
-      "topic": "スレッドの基礎"
-    },
-    {
-      "number": 97,
-      "file": "11_concurrency/n097_mutex.zig",
-      "topic": "ミューテックス"
-    },
-    {
-      "number": 98,
-      "file": "11_concurrency/n098_rwlock.zig",
-      "topic": "読み書きロック"
-    },
-    {
-      "number": 99,
-      "file": "11_concurrency/n099_atomic.zig",
-      "topic": "アトミック操作"
-    },
-    {
-      "number": 100,
-      "file": "11_concurrency/n100_thread_pool.zig",
-      "topic": "スレッドプール"
-    },
-    {
-      "number": 101,
-      "file": "11_concurrency/n101_wait_group.zig",
-      "topic": "WaitGroup"
-    },
-    {
-      "number": 102,
-      "file": "11_concurrency/n102_channel.zig",
-      "topic": "チャンネルパターン"
-    },
-    {
-      "number": 103,
-      "file": "11_concurrency/n103_futex.zig",
-      "topic": "Futex"
-    },
-    {
-      "number": 104,
-      "file": "11_concurrency/n104_once.zig",
-      "topic": "Once"
-    },
-    {
-      "number": 105,
-      "file": "11_concurrency/n105_concurrency_summary.zig",
-      "topic": "並行処理総まとめ"
-    }
+    { "number": 1, "file": "01_basics/n001_hello_world.zig", "topic": "Hello World" },
+    { "number": 2, "file": "01_basics/n002_comments.zig", "topic": "コメント" },
+    { "number": 3, "file": "01_basics/n003_constants.zig", "topic": "定数" },
+    { "number": 4, "file": "01_basics/n004_variables.zig", "topic": "変数" },
+    { "number": 5, "file": "01_basics/n005_integers.zig", "topic": "整数型" },
+    { "number": 6, "file": "01_basics/n006_floats.zig", "topic": "浮動小数点型" },
+    { "number": 7, "file": "01_basics/n007_booleans.zig", "topic": "真偽値型" },
+    { "number": 8, "file": "01_basics/n008_optionals.zig", "topic": "Optional型" },
+    { "number": 9, "file": "01_basics/n009_arrays.zig", "topic": "配列" },
+    { "number": 10, "file": "01_basics/n010_slices.zig", "topic": "スライス" },
+    { "number": 11, "file": "01_basics/n011_strings.zig", "topic": "文字列" },
+    { "number": 12, "file": "01_basics/n012_if.zig", "topic": "if文" },
+    { "number": 13, "file": "01_basics/n013_for.zig", "topic": "forループ" },
+    { "number": 14, "file": "01_basics/n014_while.zig", "topic": "whileループ" },
+    { "number": 15, "file": "01_basics/n015_switch.zig", "topic": "switch文" },
+    { "number": 16, "file": "02_structs/n016_struct.zig", "topic": "構造体" },
+    { "number": 17, "file": "02_structs/n017_methods.zig", "topic": "メソッド" },
+    { "number": 18, "file": "02_structs/n018_enum.zig", "topic": "列挙型" },
+    { "number": 19, "file": "02_structs/n019_union.zig", "topic": "共用体" },
+    { "number": 20, "file": "02_structs/n020_comptime.zig", "topic": "コンパイル時計算" },
+    { "number": 21, "file": "02_structs/n021_functions.zig", "topic": "関数" },
+    { "number": 22, "file": "02_structs/n022_builtin.zig", "topic": "組み込み関数" },
+    { "number": 23, "file": "02_structs/n023_defer.zig", "topic": "deferとerrdefer" },
+    { "number": 24, "file": "02_structs/n024_blocks.zig", "topic": "ブロックとラベル" },
+    { "number": 25, "file": "02_structs/n025_import.zig", "topic": "@importとモジュール" },
+    { "number": 26, "file": "03_memory/n026_allocators.zig", "topic": "アロケータ" },
+    { "number": 27, "file": "03_memory/n027_stack_heap.zig", "topic": "スタックとヒープ" },
+    { "number": 28, "file": "03_memory/n028_sentinel.zig", "topic": "センチネル終端配列" },
+    { "number": 29, "file": "03_memory/n029_alignment.zig", "topic": "メモリアライメント" },
+    { "number": 30, "file": "03_memory/n030_memory_layout.zig", "topic": "メモリレイアウト" },
+    { "number": 31, "file": "03_memory/n031_resize_realloc.zig", "topic": "resizeとrealloc" },
+    { "number": 32, "file": "03_memory/n032_dupe_concat.zig", "topic": "dupeとconcat" },
+    { "number": 33, "file": "03_memory/n033_memory_safety.zig", "topic": "メモリ安全性" },
+    { "number": 34, "file": "03_memory/n034_comptime_alloc.zig", "topic": "コンパイル時メモリ" },
+    { "number": 35, "file": "03_memory/n035_logging_allocator.zig", "topic": "ロギングアロケータ" },
+    { "number": 36, "file": "04_pointers/n036_pointers.zig", "topic": "ポインタ" },
+    { "number": 37, "file": "04_pointers/n037_pointer_coercion.zig", "topic": "ポインタ変換" },
+    { "number": 38, "file": "04_pointers/n038_volatile.zig", "topic": "Volatileポインタ" },
+    { "number": 39, "file": "04_pointers/n039_allowzero.zig", "topic": "allowzeroポインタ" },
+    { "number": 40, "file": "04_pointers/n040_address_space.zig", "topic": "アドレス空間" },
+    { "number": 41, "file": "04_pointers/n041_function_pointers.zig", "topic": "関数ポインタ" },
+    { "number": 42, "file": "04_pointers/n042_multi_pointers.zig", "topic": "複数要素ポインタ" },
+    { "number": 43, "file": "04_pointers/n043_optional_pointers.zig", "topic": "Optionalポインタ" },
+    { "number": 44, "file": "04_pointers/n044_pointer_arithmetic.zig", "topic": "ポインタ演算" },
+    { "number": 45, "file": "04_pointers/n045_pointer_summary.zig", "topic": "ポインタ総まとめ" },
+    { "number": 46, "file": "05_errors/n046_errors.zig", "topic": "エラー処理の基礎" },
+    { "number": 47, "file": "05_errors/n047_errdefer.zig", "topic": "errdefer" },
+    { "number": 48, "file": "05_errors/n048_error_sets.zig", "topic": "エラーセット" },
+    { "number": 49, "file": "05_errors/n049_error_payloads.zig", "topic": "エラーペイロード" },
+    { "number": 50, "file": "05_errors/n050_error_traces.zig", "topic": "エラートレース" },
+    { "number": 51, "file": "05_errors/n051_error_handling_patterns.zig", "topic": "エラーハンドリングパターン" },
+    { "number": 52, "file": "05_errors/n052_error_coercion.zig", "topic": "エラー型変換" },
+    { "number": 53, "file": "05_errors/n053_error_unwrap.zig", "topic": "エラーのアンラップ" },
+    { "number": 54, "file": "05_errors/n054_optional_vs_error.zig", "topic": "OptionalとErrorの使い分け" },
+    { "number": 55, "file": "05_errors/n055_error_summary.zig", "topic": "エラー処理総まとめ" },
+    { "number": 56, "file": "06_data_structures/n056_arraylist.zig", "topic": "ArrayList" },
+    { "number": 57, "file": "06_data_structures/n057_hashmap.zig", "topic": "HashMap" },
+    { "number": 58, "file": "06_data_structures/n058_linkedlist.zig", "topic": "LinkedList" },
+    { "number": 59, "file": "06_data_structures/n059_multiarraylist.zig", "topic": "MultiArrayList" },
+    { "number": 60, "file": "06_data_structures/n060_priorityqueue.zig", "topic": "PriorityQueue" },
+    { "number": 61, "file": "06_data_structures/n061_segmentedlist.zig", "topic": "SegmentedList" },
+    { "number": 62, "file": "06_data_structures/n062_bitset.zig", "topic": "BitSet" },
+    { "number": 63, "file": "06_data_structures/n063_bufmap.zig", "topic": "BufMap" },
+    { "number": 64, "file": "06_data_structures/n064_bufset.zig", "topic": "BufSet" },
+    { "number": 65, "file": "06_data_structures/n065_enum_collections.zig", "topic": "EnumSet/EnumMap/EnumArray" },
+    { "number": 66, "file": "07_testing/n066_testing_basics.zig", "topic": "テストの基礎" },
+    { "number": 67, "file": "07_testing/n067_test_organization.zig", "topic": "テストの構成" },
+    { "number": 68, "file": "07_testing/n068_test_patterns.zig", "topic": "テストパターン" },
+    { "number": 69, "file": "07_testing/n069_random_testing.zig", "topic": "ランダムテスト" },
+    { "number": 70, "file": "07_testing/n070_test_summary.zig", "topic": "テスト総まとめ" },
+    { "number": 71, "file": "08_build_system/n071_build_basics.zig", "topic": "ビルドシステム基礎" },
+    { "number": 72, "file": "08_build_system/n072_build_options.zig", "topic": "ビルドオプション" },
+    { "number": 73, "file": "08_build_system/n073_build_steps.zig", "topic": "ビルドステップ" },
+    { "number": 74, "file": "08_build_system/n074_dependencies.zig", "topic": "依存関係管理" },
+    { "number": 75, "file": "08_build_system/n075_cross_compile.zig", "topic": "クロスコンパイル" },
+    { "number": 76, "file": "09_file_io/n076_file_open.zig", "topic": "ファイルを開く" },
+    { "number": 77, "file": "09_file_io/n077_file_read.zig", "topic": "ファイル読み込み" },
+    { "number": 78, "file": "09_file_io/n078_file_write.zig", "topic": "ファイル書き込み" },
+    { "number": 79, "file": "09_file_io/n079_directories.zig", "topic": "ディレクトリ操作" },
+    { "number": 80, "file": "09_file_io/n080_buffered_io.zig", "topic": "バッファードI/O" },
+    { "number": 81, "file": "09_file_io/n081_seek_position.zig", "topic": "シーク位置" },
+    { "number": 82, "file": "09_file_io/n082_stdin_stdout.zig", "topic": "標準入出力" },
+    { "number": 83, "file": "09_file_io/n083_path_operations.zig", "topic": "パス操作" },
+    { "number": 84, "file": "09_file_io/n084_file_stat.zig", "topic": "ファイル情報取得" },
+    { "number": 85, "file": "09_file_io/n085_file_io_summary.zig", "topic": "ファイルI/O総まとめ" },
+    { "number": 86, "file": "10_c_interop/n086_libc_basics/", "topic": "libc連携の基礎" },
+    { "number": 87, "file": "10_c_interop/n087_custom_c/", "topic": "自作Cコード連携" },
+    { "number": 88, "file": "10_c_interop/n088_translate_c/", "topic": "translate-c" },
+    { "number": 89, "file": "10_c_interop/n089_extern_libs/", "topic": "外部Cライブラリ" },
+    { "number": 90, "file": "10_c_interop/n090_export_to_c/", "topic": "Cへのエクスポート" },
+    { "number": 91, "file": "10_c_interop/n091_c_strings/", "topic": "C文字列変換" },
+    { "number": 92, "file": "10_c_interop/n092_memory_layout/", "topic": "メモリレイアウト" },
+    { "number": 93, "file": "10_c_interop/n093_opaque_types/", "topic": "opaque型" },
+    { "number": 94, "file": "10_c_interop/n094_c_patterns/", "topic": "C連携パターン" },
+    { "number": 95, "file": "10_c_interop/n095_c_interop_summary/", "topic": "C連携総まとめ" },
+    { "number": 96, "file": "11_concurrency/n096_threads.zig", "topic": "スレッドの基礎" },
+    { "number": 97, "file": "11_concurrency/n097_mutex.zig", "topic": "ミューテックス" },
+    { "number": 98, "file": "11_concurrency/n098_rwlock.zig", "topic": "読み書きロック" },
+    { "number": 99, "file": "11_concurrency/n099_atomic.zig", "topic": "アトミック操作" },
+    { "number": 100, "file": "11_concurrency/n100_thread_pool.zig", "topic": "スレッドプール" },
+    { "number": 101, "file": "11_concurrency/n101_wait_group.zig", "topic": "WaitGroup" },
+    { "number": 102, "file": "11_concurrency/n102_channel.zig", "topic": "チャンネルパターン" },
+    { "number": 103, "file": "11_concurrency/n103_futex.zig", "topic": "Futex" },
+    { "number": 104, "file": "11_concurrency/n104_once.zig", "topic": "Once" },
+    { "number": 105, "file": "11_concurrency/n105_concurrency_summary.zig", "topic": "並行処理総まとめ" },
+    { "number": 106, "file": "12_simd/n106_simd_basics.zig", "topic": "SIMDの基礎" },
+    { "number": 107, "file": "12_simd/n107_simd_operations.zig", "topic": "SIMD操作関数" },
+    { "number": 108, "file": "12_simd/n108_simd_shuffle.zig", "topic": "SIMDシャッフル" },
+    { "number": 109, "file": "12_simd/n109_simd_practical.zig", "topic": "SIMD実践例" },
+    { "number": 110, "file": "12_simd/n110_simd_summary.zig", "topic": "SIMD総まとめ" }
   ],
   "directories": {
     "01_basics": { "start": 1, "end": 15, "completed": 15 },
@@ -541,8 +126,9 @@
     "09_file_io": { "start": 76, "end": 85, "completed": 10 },
     "10_c_interop": { "start": 86, "end": 95, "completed": 10 },
     "11_concurrency": { "start": 96, "end": 105, "completed": 10 },
-    "12_simd": { "start": 106, "end": 110, "completed": 0 }
+    "12_simd": { "start": 106, "end": 110, "completed": 5 }
   },
   "total_files": 110,
-  "total_completed": 105
+  "total_completed": 110,
+  "status": "COMPLETE"
 }
