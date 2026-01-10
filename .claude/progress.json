@@ -1,7 +1,7 @@
 {
-  "current_file": "n056_arraylist.zig",
-  "next_file": "n057_hashmap.zig",
-  "next_number": 57,
+  "current_file": "n105_concurrency_summary",
+  "next_file": "n106_simd_basics",
+  "next_number": 106,
   "completed": [
     {
       "number": 1,
@@ -282,6 +282,251 @@
       "number": 56,
       "file": "06_data_structures/n056_arraylist.zig",
       "topic": "ArrayList"
+    },
+    {
+      "number": 57,
+      "file": "06_data_structures/n057_hashmap.zig",
+      "topic": "HashMap"
+    },
+    {
+      "number": 58,
+      "file": "06_data_structures/n058_linkedlist.zig",
+      "topic": "LinkedList"
+    },
+    {
+      "number": 59,
+      "file": "06_data_structures/n059_multiarraylist.zig",
+      "topic": "MultiArrayList"
+    },
+    {
+      "number": 60,
+      "file": "06_data_structures/n060_priorityqueue.zig",
+      "topic": "PriorityQueue"
+    },
+    {
+      "number": 61,
+      "file": "06_data_structures/n061_segmentedlist.zig",
+      "topic": "SegmentedList"
+    },
+    {
+      "number": 62,
+      "file": "06_data_structures/n062_bitset.zig",
+      "topic": "BitSet"
+    },
+    {
+      "number": 63,
+      "file": "06_data_structures/n063_bufmap.zig",
+      "topic": "BufMap"
+    },
+    {
+      "number": 64,
+      "file": "06_data_structures/n064_bufset.zig",
+      "topic": "BufSet"
+    },
+    {
+      "number": 65,
+      "file": "06_data_structures/n065_enum_collections.zig",
+      "topic": "EnumSet/EnumMap/EnumArray"
+    },
+    {
+      "number": 66,
+      "file": "07_testing/n066_testing_basics.zig",
+      "topic": "テストの基礎"
+    },
+    {
+      "number": 67,
+      "file": "07_testing/n067_test_organization.zig",
+      "topic": "テストの構成"
+    },
+    {
+      "number": 68,
+      "file": "07_testing/n068_test_patterns.zig",
+      "topic": "テストパターン"
+    },
+    {
+      "number": 69,
+      "file": "07_testing/n069_random_testing.zig",
+      "topic": "ランダムテスト"
+    },
+    {
+      "number": 70,
+      "file": "07_testing/n070_test_summary.zig",
+      "topic": "テスト総まとめ"
+    },
+    {
+      "number": 71,
+      "file": "08_build_system/n071_build_basics.zig",
+      "topic": "ビルドシステム基礎"
+    },
+    {
+      "number": 72,
+      "file": "08_build_system/n072_build_options.zig",
+      "topic": "ビルドオプション"
+    },
+    {
+      "number": 73,
+      "file": "08_build_system/n073_build_steps.zig",
+      "topic": "ビルドステップ"
+    },
+    {
+      "number": 74,
+      "file": "08_build_system/n074_dependencies.zig",
+      "topic": "依存関係管理"
+    },
+    {
+      "number": 75,
+      "file": "08_build_system/n075_cross_compile.zig",
+      "topic": "クロスコンパイル"
+    },
+    {
+      "number": 76,
+      "file": "09_file_io/n076_file_open.zig",
+      "topic": "ファイルを開く"
+    },
+    {
+      "number": 77,
+      "file": "09_file_io/n077_file_read.zig",
+      "topic": "ファイル読み込み"
+    },
+    {
+      "number": 78,
+      "file": "09_file_io/n078_file_write.zig",
+      "topic": "ファイル書き込み"
+    },
+    {
+      "number": 79,
+      "file": "09_file_io/n079_directories.zig",
+      "topic": "ディレクトリ操作"
+    },
+    {
+      "number": 80,
+      "file": "09_file_io/n080_buffered_io.zig",
+      "topic": "バッファードI/O"
+    },
+    {
+      "number": 81,
+      "file": "09_file_io/n081_seek_position.zig",
+      "topic": "シーク位置"
+    },
+    {
+      "number": 82,
+      "file": "09_file_io/n082_stdin_stdout.zig",
+      "topic": "標準入出力"
+    },
+    {
+      "number": 83,
+      "file": "09_file_io/n083_path_operations.zig",
+      "topic": "パス操作"
+    },
+    {
+      "number": 84,
+      "file": "09_file_io/n084_file_stat.zig",
+      "topic": "ファイル情報取得"
+    },
+    {
+      "number": 85,
+      "file": "09_file_io/n085_file_io_summary.zig",
+      "topic": "ファイルI/O総まとめ"
+    },
+    {
+      "number": 86,
+      "file": "10_c_interop/n086_libc_basics/",
+      "topic": "libc連携の基礎"
+    },
+    {
+      "number": 87,
+      "file": "10_c_interop/n087_custom_c/",
+      "topic": "自作Cコード連携"
+    },
+    {
+      "number": 88,
+      "file": "10_c_interop/n088_translate_c/",
+      "topic": "translate-c"
+    },
+    {
+      "number": 89,
+      "file": "10_c_interop/n089_extern_libs/",
+      "topic": "外部Cライブラリ"
+    },
+    {
+      "number": 90,
+      "file": "10_c_interop/n090_export_to_c/",
+      "topic": "Cへのエクスポート"
+    },
+    {
+      "number": 91,
+      "file": "10_c_interop/n091_c_strings/",
+      "topic": "C文字列変換"
+    },
+    {
+      "number": 92,
+      "file": "10_c_interop/n092_memory_layout/",
+      "topic": "メモリレイアウト"
+    },
+    {
+      "number": 93,
+      "file": "10_c_interop/n093_opaque_types/",
+      "topic": "opaque型"
+    },
+    {
+      "number": 94,
+      "file": "10_c_interop/n094_c_patterns/",
+      "topic": "C連携パターン"
+    },
+    {
+      "number": 95,
+      "file": "10_c_interop/n095_c_interop_summary/",
+      "topic": "C連携総まとめ"
+    },
+    {
+      "number": 96,
+      "file": "11_concurrency/n096_threads.zig",
+      "topic": "スレッドの基礎"
+    },
+    {
+      "number": 97,
+      "file": "11_concurrency/n097_mutex.zig",
+      "topic": "ミューテックス"
+    },
+    {
+      "number": 98,
+      "file": "11_concurrency/n098_rwlock.zig",
+      "topic": "読み書きロック"
+    },
+    {
+      "number": 99,
+      "file": "11_concurrency/n099_atomic.zig",
+      "topic": "アトミック操作"
+    },
+    {
+      "number": 100,
+      "file": "11_concurrency/n100_thread_pool.zig",
+      "topic": "スレッドプール"
+    },
+    {
+      "number": 101,
+      "file": "11_concurrency/n101_wait_group.zig",
+      "topic": "WaitGroup"
+    },
+    {
+      "number": 102,
+      "file": "11_concurrency/n102_channel.zig",
+      "topic": "チャンネルパターン"
+    },
+    {
+      "number": 103,
+      "file": "11_concurrency/n103_futex.zig",
+      "topic": "Futex"
+    },
+    {
+      "number": 104,
+      "file": "11_concurrency/n104_once.zig",
+      "topic": "Once"
+    },
+    {
+      "number": 105,
+      "file": "11_concurrency/n105_concurrency_summary.zig",
+      "topic": "並行処理総まとめ"
     }
   ],
   "directories": {
@@ -290,14 +535,14 @@
     "03_memory": { "start": 26, "end": 35, "completed": 10 },
     "04_pointers": { "start": 36, "end": 45, "completed": 10 },
     "05_errors": { "start": 46, "end": 55, "completed": 10 },
-    "06_data_structures": { "start": 56, "end": 65, "completed": 1 },
-    "07_testing": { "start": 66, "end": 70, "completed": 0 },
-    "08_build_system": { "start": 71, "end": 75, "completed": 0 },
-    "09_file_io": { "start": 76, "end": 85, "completed": 0 },
-    "10_c_interop": { "start": 86, "end": 95, "completed": 0 },
-    "11_concurrency": { "start": 96, "end": 105, "completed": 0 },
+    "06_data_structures": { "start": 56, "end": 65, "completed": 10 },
+    "07_testing": { "start": 66, "end": 70, "completed": 5 },
+    "08_build_system": { "start": 71, "end": 75, "completed": 5 },
+    "09_file_io": { "start": 76, "end": 85, "completed": 10 },
+    "10_c_interop": { "start": 86, "end": 95, "completed": 10 },
+    "11_concurrency": { "start": 96, "end": 105, "completed": 10 },
     "12_simd": { "start": 106, "end": 110, "completed": 0 }
   },
   "total_files": 110,
-  "total_completed": 56
+  "total_completed": 105
 }

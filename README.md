@@ -77,33 +77,33 @@ Zigを高速にキャッチアップするためのコード例集。Zig v0.15.2
 ## データ構造
 
 - [n056_arraylist.zig](./06_data_structures/n056_arraylist.zig) - ArrayList
-
-**ここまで実装済み (56/110)**
-
-- n057_hashmap.zig - HashMap
-- n058_stringhashmap.zig - StringHashMap
-- n059_linkedlist.zig - LinkedList
-- n060_priority_queue.zig - PriorityQueue
-- n061_bounded_array.zig - BoundedArray
-- n062_multi_array_list.zig - MultiArrayList
-- n063_segmented_list.zig - SegmentedList
-- n064_ring_buffer.zig - RingBuffer
-- n065_bit_set.zig - BitSet
+- [n057_hashmap.zig](./06_data_structures/n057_hashmap.zig) - HashMap
+- [n058_linkedlist.zig](./06_data_structures/n058_linkedlist.zig) - LinkedList
+- [n059_multiarraylist.zig](./06_data_structures/n059_multiarraylist.zig) - MultiArrayList
+- [n060_priorityqueue.zig](./06_data_structures/n060_priorityqueue.zig) - PriorityQueue
+- [n061_segmentedlist.zig](./06_data_structures/n061_segmentedlist.zig) - SegmentedList
+- [n062_bitset.zig](./06_data_structures/n062_bitset.zig) - BitSet
+- [n063_bufmap.zig](./06_data_structures/n063_bufmap.zig) - BufMap
+- [n064_bufset.zig](./06_data_structures/n064_bufset.zig) - BufSet
+- [n065_enum_collections.zig](./06_data_structures/n065_enum_collections.zig) - EnumSet/EnumMap/EnumArray
 
 ## テスト
 
-- n066_test_basics.zig - テストの基本
-- n067_test_expect.zig - expect系関数
-- n068_test_allocator.zig - テスト用アロケータ
-- n069_test_skip.zig - テストのスキップ
-- n070_doc_tests.zig - ドキュメントテスト
+- [n066_testing_basics.zig](./07_testing/n066_testing_basics.zig) - テストの基礎
+- [n067_test_organization.zig](./07_testing/n067_test_organization.zig) - テストの構成
+- [n068_test_patterns.zig](./07_testing/n068_test_patterns.zig) - テストパターン
+- [n069_random_testing.zig](./07_testing/n069_random_testing.zig) - ランダムテスト
+- [n070_test_summary.zig](./07_testing/n070_test_summary.zig) - テスト総まとめ
 
 ## ビルドシステム
 
-- n071_build_zig_basics.zig - build.zigの基本
-- n072_build_options.zig - ビルドオプション
-- n073_dependencies.zig - 依存関係
-- n074_build_modes.zig - ビルドモード
+- [n071_build_basics.zig](./08_build_system/n071_build_basics.zig) - ビルドシステム基礎
+- [n072_build_options.zig](./08_build_system/n072_build_options.zig) - ビルドオプション
+
+**ここまで実装済み (72/110)**
+
+- n073_build_steps.zig - ビルドステップ
+- n074_dependencies.zig - 依存関係
 - n075_cross_compile.zig - クロスコンパイル
 
 ## ファイル・IO

@@ -36,6 +36,26 @@ zig-book（日本語翻訳済み）の内容を、コード主体で高速にZig
 - markdownは大きいので**Grepで検索**（Readで全体を読まない）
 - 古いAPIはexamples/を参照
 
+## 10_c_interop セクションの構造
+
+C連携セクション(n086-n095)は単体.zigファイルではなく、**build.zigを含むディレクトリ構造**で作成する：
+
+```
+10_c_interop/
+├── n086_libc_basics/
+│   ├── build.zig
+│   └── src/main.zig
+├── n087_custom_c/
+│   ├── build.zig
+│   ├── src/main.zig
+│   └── c_src/
+│       ├── mathlib.h
+│       └── mathlib.c
+└── n088_.../
+```
+
+理由: @cImportやCソースのリンクにはbuild.zigでの設定が必要なため。
+
 ## 進捗管理
 
 `.claude/progress.json` で管理
